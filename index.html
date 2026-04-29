@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CountMyRep</title>
+  <meta name="description" content="Simple workout rep counter and logger">
+  <meta name="theme-color" content="#222222">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+<body>
+  <div class="container">
+    <h1>CountMyRep</h1>
+
+    <div class="exercise-select">
+      <label for="exercise">Exercise</label>
+      <select id="exercise"></select>
+    </div>
+
+    <form id="log-form" class="log-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="reps">Reps</label>
+          <input type="number" id="reps" min="1" required placeholder="0">
+        </div>
+        <div class="form-group" id="weight-group" hidden>
+          <label for="weight">Weight (kg)</label>
+          <input type="number" id="weight" min="0" step="0.5" placeholder="0">
+        </div>
+        <button type="submit" class="btn-log">Log</button>
+      </div>
+    </form>
+
+    <div id="history" class="history">
+      <h2>History</h2>
+      <div id="history-list"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
