@@ -1,4 +1,4 @@
-const CACHE_NAME = 'countmyrep-v1';
+const CACHE_NAME = 'countmyrep-v2';
 const ASSETS = [
   './',
   './index.html',

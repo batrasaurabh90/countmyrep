@@ -112,25 +112,69 @@ h2 {
   padding: 20px 0;
 }
 
-.history-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.9rem;
+/* Workout cards */
+.workout-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
 }
 
-.history-table th,
-.history-table td {
-  text-align: left;
-  padding: 8px 6px;
+.workout-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #fafafa;
   border-bottom: 1px solid #eee;
 }
 
-.history-table th {
-  font-weight: 600;
+.workout-date {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.workout-summary {
+  flex: 1;
   font-size: 0.8rem;
   color: #666;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
+  text-align: right;
+}
+
+.workout-progress {
+  font-size: 0.85rem;
+  min-width: 60px;
+  text-align: right;
+}
+
+.workout-sets {
+  padding: 4px 0;
+}
+
+.set-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.set-row:last-child {
+  border-bottom: none;
+}
+
+.set-label {
+  font-weight: 600;
+  color: #888;
+  min-width: 42px;
+  font-size: 0.8rem;
+}
+
+.set-detail {
+  flex: 1;
 }
 
 .progress-positive {
